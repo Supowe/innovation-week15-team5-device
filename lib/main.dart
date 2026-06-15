@@ -38,10 +38,13 @@ class TeamDeviceHomePage extends StatelessWidget {
 
   static const List<String> realDeviceChecks = [
     '主电脑能执行 flutter doctor，并识别 Android toolchain',
-    'Android 手机已打开开发者选项和 USB 调试',
+    'Android 手机已打开开发者选项（设置→关于手机→连续点击版本号7次）和 USB 调试',
+    'USB 数据线支持数据传输（非仅充电线），手机连接模式已切换为"文件传输（MTP）"',
     'adb devices 显示设备状态为 device，而不是 unauthorized',
     'flutter devices 能看到真实 Android 设备',
+    '运行设备型号：OPPO Reno12 5G（PHF110）',
     'flutter run 后手机屏幕显示本小组修改后的页面',
+    '已用第二部手机拍摄手持真机运行照片，照片中可看到手机屏幕上的 App 界面',
   ];
 
   static const List<String> evidenceRules = [
